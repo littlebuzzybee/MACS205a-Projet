@@ -65,6 +65,8 @@ FossFuelData = np.array([[50.0, 0.00],
 
 def FossilFuelsCombustion(t):
     i = 0
+    if t >= FossFuelData[-1,0]:
+        return FossFuelData[-1,1]
     while i + 1 < len(FossFuelData) and t >= FossFuelData[i,0]:
         i = i + 1
     if i == 0:
