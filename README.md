@@ -8,3 +8,4 @@ Group members:
 - Timothée LY
 - Louis PERSONNAZ
 - Eliott TOURTOIS
+- Alexis WINTER
