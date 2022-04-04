@@ -1,0 +1,117 @@
+\documentclass[10pt,a4paper]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts,mathrsfs,amssymb}
+\usepackage{numprint}
+\usepackage{amsthm}
+\usepackage{pstricks,pst-eucl,pstricks-add,pst-math,pst-xkey,pst-tree}
+\usepackage{tikz,tkz-tab}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{subfig}
+\usepackage{enumitem}
+\usepackage{stmaryrd}
+\usepackage{float}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%Algorithmes%%%%%%%%%%%%%%%
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{listings}
+
+
+
+\usepackage{framed}
+\setlength{\parindent}{0pt}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\marginparwidth}{0cm}
+\setlength{\marginparsep}{0cm}
+\setlength{\parskip}{0cm}
+%\setlength{\topskip}{0cm}
+\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0.5pt}
+\definecolor{fond}{gray}{0.95}
+\newenvironment{cadrecode}{%
+  \def\FrameCommand{{\color[HTML]{888888}\vrule width 3pt}\colorbox{fond}}%
+  \MakeFramed {\advance\hsize-\width \FrameRestore}}%
+{\endMakeFramed}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,lmargin=2cm,rmargin=2cm,bmargin=2cm}
+%\fancyfoot[R]{\small \texttt{Lyc\'ee Pierre de Fermat} }
+\fancyhf{}
+\fancyhead[L]{\small \texttt{Télécom Paris} }
+\fancyhead[R]{\small \texttt{2021--2022}}
+\pagestyle{fancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%COMMANDES PERSO%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\DM}[1]{\bsc{Rapport du module : Reconnaissance Vocale}}
+\newcommand{\remise}[3]{\emph{\`A rendre le #1/#2/#3}}
+\newcommand{\auteur}{Timothée \bsc{Ly}}
+\newcounter{numeroexo}
+\newcommand{\exercice}{\par\noindent\stepcounter{numeroexo}
+	\hspace{-.25cm}\textbf{Exercice \arabic{numeroexo}}\quad}
+
+\newcounter{numeroexemple}
+\newcommand{\exemple}{\par\noindent\stepcounter{numeroexemple}
+	\hspace{-.25cm}\textbf{Exemple \arabic{numeroexemple}}\quad}
+
+\renewcommand{\thesection}{\Roman{section}}
+
+\title{}
+\date{}
+\author{}
+
+\usepackage{titling}
+\setlength{\droptitle}{-3.5cm}
+
+\DeclareMathOperator{\e}{e}
+\newenvironment{psmallmatrix}{\left(\begin{smallmatrix}}{\end{smallmatrix}\right)}
+\renewenvironment{pmatrix}{\begin{psmallmatrix}}{\end{psmallmatrix}}
+\allowdisplaybreaks
+
+\begin{document}
+
+
+\thispagestyle{fancy}
+
+\begin{center}
+
+	\DM{1} \vspace{1em}
+
+
+	\auteur
+\end{center}
+
+
+\[
+\forall t \in \mathbb{R}, y(t) \in \mathbb{R}^{7} \newline
+
+y(t)= (Atmosphere, CarbonateRock, DeepOcean, FossilFuel, Plant, Soil, SurfaceOcean, VegLandArea\_percent)  \\
+y(0)= (Atmosphere\_Initial          = 750 \\
+CarbonateRock\_Initial       = 100000000
+DeepOcean\_Initial           = 38000
+FossilFuel\_Initial          = 7500 \\
+Plant\_Initial               = 560
+Soil\_Initial                = 1500
+SurfaceOcean\_Initial        = 890 \\
+VegLandArea\_percent_Initial = 100)
+\]
+
+Hence, the Cauchy problem can be written in the following form :
+
+%$$\left \lbracket y(0)= (750, 100000000, 38000, 7500, 560, 1500, 890, 100)$$
+
+
+\end{document}
